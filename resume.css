@@ -3,15 +3,21 @@ body{
 	background: rgb(235,231,204);
 }
 
+/**----------HEADER AND CONTACT INFO----------
+ * -------------------------------------------
+ * -----------------------------------------*/
 .contact_info{
 	background: rgb(240,223,117);
+	border: 1px solid rgba(0,0,0,0.7);
+	box-shadow: 0 -1px 0 1px rgba(0,0,0,0.2);
 	border-radius: 30px;
+	height: 141px;
 }
 
 img{
 	border-radius: 30px;
 	margin: 0;
-	display: inline;
+	float: left;
 }
 
 .contact_info h1, .contact_info p{
@@ -27,26 +33,44 @@ img{
 	width: 95%;
 }
 
+
+/**----------EDUCATION SECTION----------------
+ * -------------------------------------------
+ * -----------------------------------------*/
+.education *:NOT(ul){
+	margin: 0;
+	padding: 0;
+}
+
+.education .date, .education .location{
+	display: block;
+	float: right;
+}
+
 ul{
 	//list-style-type: none;
 }
 
-table{
+
+/**----------TECHNICAL SECTION----------------
+ * -------------------------------------------
+ * -----------------------------------------*/
+.technical{
 	width: 100%;j
 }
 
-tr{
+.technical tr{
 	width: 100%;
 }
 
-td{
+.technical td{
 	text-transform: uppercase;
 	text-align: center;
 	width: 25%;
 	//background: rgb(200,40,80);
 }
 
-td:first-child{
+.technical td:first-child{
 	text-transform: none;
 	text-align: left;
 	padding: 0 0 0 150px;
