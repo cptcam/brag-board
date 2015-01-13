@@ -11,6 +11,7 @@ body{
 img{
 	border-radius: 30px;
 	margin: 0;
+	display: inline;
 }
 
 .contact_info h1, .contact_info p{
