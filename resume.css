@@ -1,32 +1,83 @@
+/*--background patterns courtesy of subtlepatterns.com--*/
+
 body{
-	width: 1500 px;
-	background: rgb(235,231,204);
+	max-width: 1500 px;
+	background-image: url(images/congruent_outline.png);
+	background-repeat: repeat;
+}
+
+h1{
+	font-family: 'Raleway', Arial, sans-serif;
+	text-shadow: -1px 0 0 rgb(0,0,0);
+	text-transform: uppercase;
+	color: rgba(65,106,196,0.8);
+}
+
+h2{
+	border-bottom: 1px solid black;
+}
+
+h2, h3{
+	font-family: 'Cutive Mono', sans-serif;
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: 20px;
+}
+
+p, li, td{
+	font-family: 'Cutive Mono', Courier, monospace;
+	font-size: 15px;
 }
 
 /**----------HEADER AND CONTACT INFO----------
  * -------------------------------------------
  * -----------------------------------------*/
 .contact_info{
-	background: rgb(240,223,117);
+	position: relative;
+	background-image: url(images/congruent_pentagon.png);
+	background-repeat: repeat-x;
 	border: 1px solid rgba(0,0,0,0.7);
 	box-shadow: 0 -1px 0 1px rgba(0,0,0,0.2);
 	border-radius: 30px;
-	height: 141px;
+	height: 140px;
+}
+
+.wrapper{
+	width: 55%;
+	height: 99%;
+	float: left;
+	z-index: 1;
+	background: rgb(255,255,255);
+	opacity: 0.7;
+}
+
+.info{
+	width: 55%;
+	float: left;
+	position: absolute;
+	left: 110px;
+	top: 0;
+	z-index: 10;
+}
+
+.info *{
+	margin: 0;
+	padding: 0;
 }
 
 img{
-	border-radius: 30px;
+	border-radius: 30px 0 0 30px;
+	border-right: 1px solid rgb(0,0,0);
+	box-shadow: 1px 0 0 0 rgba(0,0,0,0.3);
 	margin: 0;
 	float: left;
 }
 
-.contact_info h1, .contact_info p{
-	margin: 0 0 0 150px;
-	//float: right;
-}
-
 .resume-section{
-	background: rgba(181,179,165,0.6);
+	background-image: url(images/lightpaperfibers.png);
+	background-repeat: repeat;
 	margin: 0 0 0 25px;
 	padding: 10px;
 	display: inline-block;
@@ -37,6 +88,18 @@ img{
 /**----------EDUCATION SECTION----------------
  * -------------------------------------------
  * -----------------------------------------*/
+.education{
+	width: 50%;
+}
+
+.education td:nth-of-type(odd){
+	width: 70%;
+}
+
+.education td:nth-of-type(even){
+	width: 30%;
+}
+
 .education *:NOT(ul){
 	margin: 0;
 	padding: 0;
@@ -56,24 +119,30 @@ ul{
  * -------------------------------------------
  * -----------------------------------------*/
 .technical{
-	width: 100%;j
+	width: 100%;
 }
 
 .technical tr{
 	width: 100%;
+	margin: 0 0 15px 0;
+}
+
+.technical tr:first-of-type td{
+	font-family: Arial, sans-serif;
 }
 
 .technical td{
 	text-transform: uppercase;
 	text-align: center;
 	width: 25%;
-	//background: rgb(200,40,80);
+	height: 10%;
 }
 
 .technical td:first-child{
+	font-size: 17px;
 	text-transform: none;
 	text-align: left;
-	padding: 0 0 0 150px;
+	width: 10%;
 }
 
 .experience{
@@ -146,12 +215,4 @@ tr:nth-of-type(10) td:nth-of-type(2) .experience-2{
 
 tr:nth-of-type(11) td:nth-of-type(2) .experience-2{
 	background: rgba(240,223,117,1);
-}
-
-p{
-	//background: rgba(200,0,0,1);
-}
-
-h1{
-	//background-color: rgb(0,100,0);
 }
