@@ -68,12 +68,21 @@ p, li, td{
 	padding: 0;
 }
 
-img{
+.personal-picture{
 	border-radius: 30px 0 0 30px;
 	border-right: 1px solid rgb(0,0,0);
 	box-shadow: 1px 0 0 0 rgba(0,0,0,0.3);
 	margin: 0;
 	float: left;
+}
+
+.selection-icon{
+	border-radius: 40px;
+	height: 50%;
+}
+
+.selection-icon:hover{
+	box-shadow: 0 0 2px 2px rgba(214,194,64,1);
 }
 
 
