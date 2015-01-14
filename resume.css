@@ -23,7 +23,7 @@ h2, h3{
 }
 
 h3{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 p, li, td{
@@ -123,11 +123,6 @@ img{
 	display: block;
 	float: right;
 }
-
-ul{
-	//list-style-type: none;
-}
-
 
 /**----------TECHNICAL SECTION----------------
  * -------------------------------------------
@@ -229,4 +224,30 @@ tr:nth-of-type(10) td:nth-of-type(2) .experience-2{
 
 tr:nth-of-type(11) td:nth-of-type(2) .experience-2{
 	background: rgba(240,223,117,1);
+}
+
+/**--------------WORK SECTION-----------------
+ * -------------------------------------------
+ * -----------------------------------------*/
+ .work{
+	width: 97%;
+	margin-top: 15px;
+}
+
+.work td:nth-of-type(odd){
+	width: 60%;
+}
+
+.work td:nth-of-type(even){
+	width: 40%;
+}
+
+.work *:NOT(ul){
+	margin: 0;
+	padding: 0;
+}
+
+.work .date, .work .location{
+	display: block;
+	float: right;
 }
