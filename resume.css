@@ -104,8 +104,7 @@ p, li, td{
 	background-repeat: repeat;
 	margin: 0 auto;
 	padding: 10px;
-	//display: inline-block;
-	display: none;
+	display: inline-block;
 	width: 95%;
 }
 
