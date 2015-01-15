@@ -43,6 +43,7 @@ p, li, td{
 	border-radius: 30px;
 	height: 140px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .wrapper{
@@ -103,7 +104,8 @@ p, li, td{
 	background-repeat: repeat;
 	margin: 0 auto;
 	padding: 10px;
-	display: inline-block;
+	//display: inline-block;
+	display: none;
 	width: 95%;
 }
 
@@ -152,27 +154,15 @@ p, li, td{
 .technical td{
 	text-transform: uppercase;
 	text-align: center;
-	width: 25%;
+	width: 20%;
 	height: 10%;
 }
 
 .technical td:first-child{
-	font-size: 17px;
+	font-size: 15px;
 	text-transform: none;
 	text-align: left;
 	width: 10%;
-}
-
-.experience{
-	background: rgba(240,223,117,0.3);
-	margin: 1 px;
-	width: 30%;
-	height: 10px;
-	border: 1px solid rgb(181,179,165);
-	float: right;
-	display: inline-block;
-	
-	box-shadow: -1px 1px rgba(0,0,0,0.3);
 }
 
 .experience-2{
